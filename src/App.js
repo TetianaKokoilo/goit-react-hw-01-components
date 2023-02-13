@@ -1,19 +1,12 @@
 import Profile from './components/profile/Profile';
-
 import user from './components/jsonfiles/user';
+
+import Statistics from './components/statistics/Statistics';
+import data from './components/jsonfiles/data';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        // height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
+    <div>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -23,6 +16,10 @@ export const App = () => {
         quantityViews={user.stats.views}
         quantityLikes={user.stats.likes}
       />
+
+      <Statistics title="Upload stats" stats={data} />
+
+
     </div>
   );
 };
