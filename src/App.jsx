@@ -1,7 +1,6 @@
 import Profile from './components/profile/Profile';
-import Statistics from './components/statistics/Statistics'
-import user from './user.json';
-// import data from './data.json';
+
+import user from './components/jsonfiles/user';
 
 export const App = () => {
   return (
@@ -24,7 +23,6 @@ export const App = () => {
         quantityViews={user.stats.views}
         quantityLikes={user.stats.likes}
       />
-      <Statistics />
     </div>
   );
 };
