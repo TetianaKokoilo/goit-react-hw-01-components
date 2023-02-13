@@ -1,5 +1,4 @@
-// import PropTypes from 'prop-types';
-
+import PropTypes from 'prop-types';
 export default function Profile({
   username,
   tag,
@@ -34,4 +33,14 @@ export default function Profile({
       </ul>
     </div>
   );
-}
+};
+
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  quantityFollowers: PropTypes.number.isRequired,
+  quantityViews: PropTypes.number.isRequired,
+  quantityLikes: PropTypes.number.isRequired,
+};
