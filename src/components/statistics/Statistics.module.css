@@ -13,21 +13,17 @@
     margin-bottom: 45px;
 }
 .stat {
-    /* gap: 10px; */
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
 }
 .item {
     display: flex;
-    flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
     text-align: center;
-    /* gap: 5px; */
     margin-top: 10px;
     background-color: var(--color-blue);
-}
-.item.color {
-    background-color: var(--color-blue);
+    color: var(--background-color-primary);
+    flex: 0 1 200px;
+    flex-direction: column;
+     margin-right: 2px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
