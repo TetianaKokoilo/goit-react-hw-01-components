@@ -1,23 +1,22 @@
 import PropTypes from 'prop-types';
+import Friend from './Friend';
 
 export default function FriendList({ friends }) {
-
   return (
     <ul class="friend-list">
       {friends.map(friend => {
         return (
-            <li key={friend.id} class="item">
-                <span class="status"> {friend.isOnline === true ? 'online' : 'ofline'}</span>
-
-            <img class="avatar" src={friend.avatar} alt={friend.name} width="48" />
-                <p class="name">{friend.name}</p>
+          <li key={friend.id} class="item">
+            <Friend friend={friend} />
           </li>
         );
       })}
     </ul>
   );
-};
+}
 
 FriendList.propTypes = {
-    friends: PropTypes.arrayOf(PropTypes.shape())
-}
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({ id: PropTypes.number.isRequired })
+  ),
+};
