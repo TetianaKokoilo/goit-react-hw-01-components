@@ -47,9 +47,12 @@
     text-align: center;
     gap: 5px;
     margin-top: 10px;
+    flex: 1 1;
 }
 .label {
     color: var(--color-secondary-text);
+    font-size: 18px;
+    
 }
 .quantity {
     color: var(--color-primary-text);
