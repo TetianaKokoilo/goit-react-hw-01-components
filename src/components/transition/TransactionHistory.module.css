@@ -1,24 +1,21 @@
 .transaction-history {
-    padding: 15px;
-    margin-top: 30px;
-    width: 400px;
-    background-color: var(--background-color-primary);
-    
-    
+  padding: 15px;
+  margin-top: 30px;
+  width: 400px;
+  background-color: var(--background-color-primary);
 }
-
 
 td,
 th {
-    padding: 10px;
-    text-align: center;
-    color: var(--color-secondary-text);
+  padding: 10px;
+  text-align: center;
+  color: var(--color-secondary-text);
 }
- tr:nth-child(2n+1) {
-    background-color: var(--color-light-sky);
- }
+tr:nth-child(2n + 1) {
+  background-color: var(--color-light-sky);
+}
 
- th {
-    background-color: var(--color-sky);
-    color: var(--background-color-primary);
- }
+th {
+  background-color: var(--color-sky);
+  color: var(--background-color-primary);
+}
