@@ -2,7 +2,7 @@
     padding: 15px;
     background-color: var(--background-color-primary);
     border-radius: 5px;
-    width: 350px;
+    /* width: 350px; */
 }
 .avatar {
     width: 150px;

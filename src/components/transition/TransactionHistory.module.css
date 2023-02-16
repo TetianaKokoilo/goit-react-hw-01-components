@@ -4,14 +4,21 @@
     width: 400px;
     background-color: var(--background-color-primary);
     
+    
 }
-thead {
-    background-color: var(--color-sky);
 
-}
+
 td,
 th {
-    border-left: 0.1px solid #777;
     padding: 10px;
     text-align: center;
+    color: var(--color-secondary-text);
 }
+ tr:nth-child(2n+1) {
+    background-color: var(--color-light-sky);
+ }
+
+ th {
+    background-color: var(--color-sky);
+    color: var(--background-color-primary);
+ }
