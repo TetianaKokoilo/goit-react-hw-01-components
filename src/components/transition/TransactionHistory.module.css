@@ -1,0 +1,17 @@
+.transaction-history {
+    padding: 15px;
+    margin-top: 30px;
+    width: 400px;
+    background-color: var(--background-color-primary);
+    
+}
+thead {
+    background-color: var(--color-sky);
+
+}
+td,
+th {
+    border-left: 0.1px solid #777;
+    padding: 10px;
+    text-align: center;
+}
